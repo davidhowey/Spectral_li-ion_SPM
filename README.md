@@ -117,6 +117,6 @@ please read the `LICENSE.txt` file for more information.
 [5]: mailto:david.howey@eng.ox.ac.uk
 [6]: http://www.sciencedirect.com/science/article/pii/S0378775315300677
 [7]: http://arxiv.org/abs/1506.08689
-[8]: https://github.com/adrienBizeray/SPM/archive/master.zip
+[8]: https://github.com/adrienBizeray/Spectral_li-ion_SPM/archive/master.zip
 [9]: https://git-scm.com/
 [10]:http://dl.acm.org/citation.cfm?id=365727
