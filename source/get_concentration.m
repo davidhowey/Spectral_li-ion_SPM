@@ -13,11 +13,11 @@ function [cs3, cs1] = get_concentration(t,y,I,data,matrices_spm)
 %
 % OUTPUTS
 % cs3           Concentration at cathode [mol/m3]. 
-%                   cs3(1) = concentration at node at centre of sphere (r = 0)
-%                   cs3(N+1) = concentration at node on surface of sphere
+%                   cs3(N+1) = concentration at node at centre of sphere (r = 0)
+%                   cs3(1)   = concentration at node on surface of sphere
 % cs3           Concentration at anode [mol/m3]. 
-%                   cs3(1) = concentration at node at centre of sphere (r = 0)
-%                   cs3(N+1) = concentration at node on surface of sphere
+%                   cs3(N+1) = concentration at node at centre of sphere (r = 0)
+%                   cs3(1)   = concentration at node on surface of sphere
 %
 %
 % Copyright (c) 2016, The Chancellor, Masters and Scholars of the University 
