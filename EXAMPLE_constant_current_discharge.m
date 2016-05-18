@@ -467,8 +467,8 @@
 %
 % $$
 % \left( \left[ D_M^1 \right]_{1,1:N} +
-% \left[ D_M^1 \right]_{1,N+2:M+1} P \right) \mathbf{c}_{2:N} + 
-% \left[ D_M^1 \right]_{1,N+1} \mathbf{c}_1=
+% \left[ D_M^1 \right]_{1,N+2:M+1} P \right) \mathbf{c}_{1:N} + 
+% \left[ D_M^1 \right]_{1,N+1} \mathbf{c}_{N+1}=
 %  \frac{-R_{s,i}}{D_{s,i}(T)}  j_i(t) 
 % $$
 %
@@ -476,10 +476,10 @@
 % particle:
 % 
 % $$
-% \mathbf{c}_1=
+% \mathbf{c}_{N+1}=
 % - \frac{\left[ D_M^1 \right]_{1,1:N} + 
 % \left[ D_M^1 \right]_{1,N+2:M+1} P}{\left[ D_M^1 \right]_{1,N+1} } 
-% \mathbf{c}_{2:N} - 
+% \mathbf{c}_{1:N} - 
 % \frac{1}{\left[ D_M^1 \right]_{1,N+1} } 
 % \frac{R_{s,i}}{D_{s,i}(T)}  j_i(t) 
 % $$
