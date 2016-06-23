@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Spectral li-ion spm by adrienBizeray</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Spectral li-ion spm</h1>
+      <h2 class="project-tagline">Spectral li-ion SPM is a MATLAB code that solves the so-called lithium-ion battery Single Particle Model (SPM) using spectral numerical methods. </h2>
+      <a href="https://github.com/adrienBizeray/Spectral_li-ion_SPM" class="btn">View on GitHub</a>
+      <a href="https://github.com/adrienBizeray/Spectral_li-ion_SPM/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/adrienBizeray/Spectral_li-ion_SPM/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="about-spectral-li-ion-spm" class="anchor" href="#about-spectral-li-ion-spm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>About <em>Spectral li-ion SPM</em>
+</h1>
+
+<p><em>Spectral li-ion SPM</em> is a MATLAB code that solves the so-called 
+lithium-ion battery Single Particle Model (SPM) using spectral numerical 
+methods.
+The SPM is an electrochemical model describing lithium transport, reaction 
+kinetics and thermodynamics in lithium-ion batteries. 
+<em>Spectral li-ion SPM</em> consists of the SPM coupled to a bulk thermal model 
+describing the evolution of battery temperature. 
+The SPM is an approximation to the electrochemical pseudo-two dimensional 
+lithium-ion battery model where electrolyte transport limitations are 
+neglected. 
+Therefore the SPM is only valid for relatively low currents, up to 1C or 2C 
+depending on the battery design.
+The diffusion partial-differential equations of the SPM are discretised in 
+space using an efficient spectral numerical method: Chebyshev orthogonal 
+collocation. 
+This implementation of the SPM is similar to our implementation of the more 
+complex pseudo-two dimensional battery model which is discussed in our 
+paper:</p>
+
+<p>Bizeray A.M., Zhao S., Duncan S. R., and Howey D. A., 
+“Lithium-ion battery thermal-electrochemical model-based state 
+estimation using orthogonal collocation and a modified extended Kalman 
+filter”, Journal of Power Sources, vol. 296, pp. 400-412, 2015. 
+<a href="http://www.sciencedirect.com/science/article/pii/S0378775315300677">Publisher copy</a> and <a href="http://arxiv.org/abs/1506.08689">Open access pre-print</a>.</p>
+
+<p>If you use <em>Spectral li-ion SPM</em> in your work, please cite our paper.
+This code has been developed at the Department of Engineering Science of 
+the University of Oxford. 
+For information about our lithium-ion battery research, 
+visit the <a href="http://users.ox.ac.uk/%7Eengs1053/">Howey Research Group</a> website.
+If you are interested in our energy research, 
+check out our research group website <a href="http://epg.eng.ox.ac.uk/">Energy and Power Group</a>. </p>
+
+<p>For more information and comments, please contact 
+<a href="mailto:david.howey@eng.ox.ac.uk">david.howey@eng.ox.ac.uk</a>.</p>
+
+<h1>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Requirements</h1>
+
+<p>You will need MATLAB to run this code. This code has been developed and 
+tested in MATLAB R2015b and should work with later versions. 
+Although it has not been tested with earlier MATLAB releases, it should 
+also work with no or minor modifications.</p>
+
+<p>You will also need the <a href="http://dip.sun.ac.za/%7Eweideman/research/differ.html"><em>MATLAB Differentiation Matrix Suite</em></a> developed 
+by Weideman and Reddy to use our code (see "Installation"). The <em>MATLAB 
+Differentiation Matrix Suite</em> is available for free on the 
+<a href="http://uk.mathworks.com/matlabcentral/fileexchange/29-dmsuite">MathWorks website</a> and is used to compute the Chebyshev orthogonal 
+collocation differentiation matrices.
+More details can be found on their <a href="http://dip.sun.ac.za/%7Eweideman/research/differ.html">website</a> and <a href="http://dl.acm.org/citation.cfm?id=365727">paper</a>: 
+JAC Weideman, SC Reddy, A MATLAB differentiation matrix suite, 
+ACM Transactions of Mathematical Software, 
+Vol 26, pp 465-519 (2000).</p>
+
+<h1>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h1>
+
+<h2>
+<a id="step-1---installing-spectral-li-ion-spm" class="anchor" href="#step-1---installing-spectral-li-ion-spm" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 1 - Installing <em>Spectral li-ion SPM</em>
+</h2>
+
+<h3>
+<a id="option-1---downloading-a-zip-file" class="anchor" href="#option-1---downloading-a-zip-file" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Option 1 - Downloading a .zip file</h3>
+
+<p>Download a .zip file of the code at:</p>
+
+<p><a href="https://github.com/adrienBizeray/Spectral_li-ion_SPM/archive/master.zip">https://github.com/adrienBizeray/Spectral_li-ion_SPM/archive/master.zip</a></p>
+
+<p>Then, unzip the folder in a chosen directory on your computer.</p>
+
+<h3>
+<a id="option-2---cloning-the-repository-with-git" class="anchor" href="#option-2---cloning-the-repository-with-git" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Option 2 - Cloning the repository with Git</h3>
+
+<p>To clone the repository, you will first need to have <a href="https://git-scm.com/">Git</a> installed on 
+your computer. Then, navigate to the directory where you want to clone the 
+repository in a terminal, and type:</p>
+
+<pre><code>git clone https://github.com/adrienBizeray/Spectral_li-ion_SPM.git
+</code></pre>
+
+<p>The folder containing all the files should appear in your chosen directory.</p>
+
+<h2>
+<a id="step-2---installing-the-matlab-differentiation-matrix-suite" class="anchor" href="#step-2---installing-the-matlab-differentiation-matrix-suite" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Step 2 - Installing the <em>MATLAB Differentiation Matrix Suite</em>
+</h2>
+
+<ol>
+<li><p>Go to the MathWorks website at 
+<a href="http://uk.mathworks.com/matlabcentral/fileexchange/29-dmsuite">http://uk.mathworks.com/matlabcentral/fileexchange/29-dmsuite</a> 
+and download the <code>DMSUITE</code> folder 
+(you may need to register and obtain a Mathworks account,
+alternatively you can download the <code>chebdif.m</code> file only <a href="http://dip.sun.ac.za/%7Eweideman/research/differ.html">here</a>).</p></li>
+<li><p>Unzip the <code>DMSUITE</code> folder and put it somewhere on your MATLAB path. 
+We suggest to drop it in the <code>source</code> sub-folder of the 
+<em>Spectral li-ion SPM</em> code and run the following command to add this 
+sub-folder to the MATLAB path:</p></li>
+</ol>
+
+<pre><code>addpath(genpath('source'));
+</code></pre>
+
+<h1>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started</h1>
+
+<p>The best way to get started with <em>Spectral li-ion SPM</em> is to have a look at
+the <a href="EXAMPLE_constant_current_discharge.m">EXAMPLE_constant_current_discharge.m</a> file. 
+This file runs a 1C constant-current discharge simulation for a LCO 
+lithium-ion cell, and also gives some explanation about the single particle
+model and its MATLAB implementation using Chebyshev orthogonal collocation.</p>
+
+<p>The <a href="EXAMPLE_constant_current_discharge.m">EXAMPLE_constant_current_discharge.m</a> 
+script was written with MATLAB Publish markups, therefore the best way to 
+read this file is to generate a HTML file by using the <strong>MATLAB Publish</strong> 
+function instead of simply running the file (this may take a few minutes 
+the first time as pictures will be automatically generated).
+Alternatively, a PDF version of the file is available in the 
+<em>Spectral li-ion SPM</em> folder.</p>
+
+<h1>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>License</h1>
+
+<p>This open-source MATLAB code is published under the BSD 3-clause License,
+please read the <code>LICENSE.txt</code> file for more information.</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/adrienBizeray/Spectral_li-ion_SPM">Spectral li-ion spm</a> is maintained by <a href="https://github.com/adrienBizeray">adrienBizeray</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
