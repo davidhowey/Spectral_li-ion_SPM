@@ -1,7 +1,7 @@
 About _Spectral li-ion SPM_
 ===========================
 
-<a href="https://doi.org/10.5281/zenodo.212018"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.212018.svg" alt="DOI"></a>
+[![DOI](https://zenodo.org/badge/59030370.svg)](https://zenodo.org/badge/latestdoi/59030370)
 
 _Spectral li-ion SPM_ is a MATLAB code that solves the so-called 
 lithium-ion battery Single Particle Model (SPM) using spectral numerical 
@@ -28,7 +28,9 @@ estimation using orthogonal collocation and a modified extended Kalman
 filter”, Journal of Power Sources, vol. 296, pp. 400-412, 2015. 
 [Publisher copy][6] and [Open access pre-print][7].
 
-If you use _Spectral li-ion SPM_ in your work, please cite our code as shown at https://doi.org/10.5281/zenodo.212018 and our paper.
+If you use _Spectral li-ion SPM_ in your work, please cite our paper and our code using its DOI:
+[![DOI](https://zenodo.org/badge/59030370.svg)](https://zenodo.org/badge/latestdoi/59030370)
+
 This code has been developed at the Department of Engineering Science of 
 the University of Oxford. 
 For information about our lithium-ion battery research, 
