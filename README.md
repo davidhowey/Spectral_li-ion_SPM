@@ -1,4 +1,4 @@
-About _Spectral li-ion SPM_
+About _Spectral Li-ion SPM_
 ===========================
 
 To cite this code, check the latest release DOI at https://zenodo.org/badge/latestdoi/59030370
