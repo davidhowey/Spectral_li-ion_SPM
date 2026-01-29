@@ -3,12 +3,12 @@ About _Spectral Li-ion SPM_
 
 To cite this code, check the latest release DOI at https://zenodo.org/badge/latestdoi/59030370
 
-_Spectral li-ion SPM_ is a MATLAB code that solves the so-called 
+_Spectral Li-ion SPM_ is a MATLAB code that solves the so-called 
 lithium-ion battery Single Particle Model (SPM) using spectral numerical 
 methods.
 The SPM is an electrochemical model describing lithium transport, reaction 
 kinetics and thermodynamics in lithium-ion batteries. 
-_Spectral li-ion SPM_ consists of the SPM coupled to a bulk thermal model 
+_Spectral Li-ion SPM_ consists of the SPM coupled to a bulk thermal model 
 describing the evolution of battery temperature. 
 The SPM is an approximation to the electrochemical pseudo-two dimensional 
 lithium-ion battery model where electrolyte transport limitations are 
@@ -28,7 +28,7 @@ estimation using orthogonal collocation and a modified extended Kalman
 filter”, Journal of Power Sources, vol. 296, pp. 400-412, 2015. 
 [Publisher copy][6] and [Open access pre-print][7].
 
-If you use _Spectral li-ion SPM_ in your work, please cite our paper and our code using its DOI available at [https://zenodo.org/badge/latestdoi/59030370](https://zenodo.org/badge/latestdoi/59030370).
+If you use _Spectral Li-ion SPM_ in your work, please cite our paper and our code using its DOI available at [https://zenodo.org/badge/latestdoi/59030370](https://zenodo.org/badge/latestdoi/59030370).
 
 This code has been developed at the Department of Engineering Science of 
 the University of Oxford. 
@@ -54,7 +54,7 @@ Vol 26, pp 465-519 (2000).
  
 Installation
 ============
-## Step 1 - Installing _Spectral li-ion SPM_ ##
+## Step 1 - Installing _Spectral Li-ion SPM_ ##
 ###Option 1 - Downloading a .zip file###
 Download a .zip file of the code at:
 
@@ -80,7 +80,7 @@ alternatively you can download the `chebdif.m` file only [here][4]).
 
 2. Unzip the `DMSUITE` folder and put it somewhere on your MATLAB path. 
 We suggest to drop it in the `source` sub-folder of the 
-_Spectral li-ion SPM_ code and run the following command to add this 
+_Spectral Li-ion SPM_ code and run the following command to add this 
 sub-folder to the MATLAB path:
 ```
 addpath(genpath('source'));
@@ -88,7 +88,7 @@ addpath(genpath('source'));
 
 Getting started
 ===============
-The best way to get started with _Spectral li-ion SPM_ is to have a look at
+The best way to get started with _Spectral Li-ion SPM_ is to have a look at
 the [EXAMPLE_constant_current_discharge.m](EXAMPLE_constant_current_discharge.m) file. 
 This file runs a 1C constant-current discharge simulation for a LCO 
 lithium-ion cell, and also gives some explanation about the single particle
@@ -100,7 +100,7 @@ read this file is to generate a HTML file by using the **MATLAB Publish**
 function instead of simply running the file (this may take a few minutes 
 the first time as pictures will be automatically generated).
 Alternatively, a PDF version of the file is available in the 
-_Spectral li-ion SPM_ folder.
+_Spectral Li-ion SPM_ folder.
 
 License
 =======
