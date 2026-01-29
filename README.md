@@ -28,17 +28,12 @@ estimation using orthogonal collocation and a modified extended Kalman
 filter”, Journal of Power Sources, vol. 296, pp. 400-412, 2015. 
 [Publisher copy][6] and [Open access pre-print][7].
 
-If you use _Spectral li-ion SPM_ in your work, please cite our paper and our code using its DOI available at https://zenodo.org/badge/latestdoi/59030370
+If you use _Spectral li-ion SPM_ in your work, please cite our paper and our code using its DOI available at [https://zenodo.org/badge/latestdoi/59030370](https://zenodo.org/badge/latestdoi/59030370).
 
 This code has been developed at the Department of Engineering Science of 
 the University of Oxford. 
 For information about our lithium-ion battery research, 
-visit the [Howey Research Group][2] website.
-If you are interested in our energy research, 
-check out our research group website [Energy and Power Group][1]. 
-
-For more information and comments, please contact 
-[david.howey@eng.ox.ac.uk][5].
+visit the [Battery Intelligence Lab][2] website.
 
 Requirements
 ============
@@ -47,7 +42,7 @@ tested in MATLAB R2015b and should work with later versions.
 Although it has not been tested with earlier MATLAB releases, it should 
 also work with no or minor modifications.
 
-You will also need the [_MATLAB Differentiation Matrix Suite_][4] developed 
+You will also need the [MATLAB Differentiation Matrix Suite_][4] developed 
 by Weideman and Reddy to use our code (see "Installation"). The _MATLAB 
 Differentiation Matrix Suite_ is available for free on the 
 [MathWorks website][3] and is used to compute the Chebyshev orthogonal 
@@ -114,10 +109,9 @@ This open-source MATLAB code is published under the BSD 3-clause License,
 please read the `LICENSE.txt` file for more information.
 
 [1]: http://epg.eng.ox.ac.uk/
-[2]: http://users.ox.ac.uk/~engs1053/
+[2]: http://howey.eng.ox.ac.uk/
 [3]: http://uk.mathworks.com/matlabcentral/fileexchange/29-dmsuite
 [4]: http://dip.sun.ac.za/~weideman/research/differ.html
-[5]: mailto:david.howey@eng.ox.ac.uk
 [6]: http://www.sciencedirect.com/science/article/pii/S0378775315300677
 [7]: http://arxiv.org/abs/1506.08689
 [8]: https://github.com/adrienBizeray/Spectral_li-ion_SPM/archive/master.zip
